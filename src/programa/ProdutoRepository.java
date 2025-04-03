@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProdutoRepository {
-    private final List<Produto> estoque = new ArrayList<>(); //-- Variável com modificador do tipo Final ñ permite reatribuição apos inicalização;
+    private final List<Produto> estoque = new ArrayList<>();
 
     public List<Produto> getEstoque() {
         return estoque;

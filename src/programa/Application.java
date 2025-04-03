@@ -10,7 +10,6 @@ public class Application {
     public static void main(String[] args) {
         populaBase();
 
-        //Imprime todos os produtos do estoque
         imprimeProduto();
 
         Produto bySku = repository.getBySku("RS002");
@@ -32,10 +31,8 @@ public class Application {
         updateProduto.setQuantidade(100);
         repository.updateBySku(updateProduto);
 
-        //-- Deleta produtos
         deletarProduto();
 
-        //-- Imprime estoque sem os produtos deletados
         imprimeProduto();
     }
 
